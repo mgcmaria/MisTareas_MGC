@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5c6bc0</color>
+    <color name="colorPrimaryDark">#1a237e</color>
+    <color name="colorAccent">#9b8d19</color>
+    <color name="colorAmarilloClarito">#fff59d</color>
+    <color name="alfa1">#337986cb</color>
+    <color name="alfa2">#CC283593</color>
+    <color name="gris">#546e7a</color>
+    <color name="gris_claro">#78909c</color>
+    <color name="colorAccent_alfa">#99fff59d</color>
+    <color name="alfa3">#339b8d19</color>
+    <color name="alfa4">#CCfff59d</color>
+    <color name="azul_clarito">#CCd4f5fe</color>
+    <color name="alfa_blanco">#CCffffff</color>
+</resources>

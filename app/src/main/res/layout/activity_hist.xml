@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="70dp"
+        app:srcCompat="@drawable/mar"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/imagen"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient1"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/alfa2"/>
+
+    <Button
+        android:id="@+id/button_volver"
+        style="@style/item_tarea"
+        android:layout_width="65dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/boton_drawable"
+        android:drawableBottom="@mipmap/flecha_atras"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="volver"/>
+
+
+    <ListView
+        android:id="@+id/listTareas_old"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="74dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/historial_de_tareas"
+        android:textColor="@color/azul_clarito"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/fondo_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/imagen"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/fondo1" />
+
+    <TextView
+        android:id="@+id/label1"
+        style="@style/labels"
+        android:layout_marginTop="20dp"
+        android:text="@string/mis_tareas"
+        android:textColor="@color/gris"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/label2"
+        style="@style/labels"
+        android:layout_below="@+id/label1"
+        android:layout_marginTop="10dp"
+        android:text="@string/mgc"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/label2"
+        android:background="@color/alfa_blanco"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingStart="70dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <android.support.design.widget.TextInputEditText
+                style="@style/input_edit_text"
+                android:id="@+id/editText"
+                android:hint="@string/usuario">
+                <requestFocus />
+            </android.support.design.widget.TextInputEditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <android.support.design.widget.TextInputEditText
+                style="@style/input_edit_text"
+                android:id="@+id/editText2"
+                android:hint="@string/password"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/login_image_view"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="180dp"
+        app:srcCompat="@mipmap/usuario"/>
+
+    <ImageView
+        style="@style/login_image_view"
+        android:id="@+id/imageView3"
+        android:layout_marginTop="242dp"
+        app:srcCompat="@mipmap/candado"/>
+
+    <Button
+        style="@style/login_buton_view"
+        android:id="@+id/boton_login"
+        android:layout_width="match_parent"
+        android:layout_below="@id/linear"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/boton"
+        android:text="@string/login"
+        android:onClick="login"/>
+
+
+    <TextView
+        style="@style/login_buton_view"
+        android:id="@+id/crear_cuenta"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/boton_login"
+        android:layout_centerHorizontal="true"
+        android:text="@string/crear_cuenta"
+        android:onClick="crearCuenta"/>
+
+</RelativeLayout>

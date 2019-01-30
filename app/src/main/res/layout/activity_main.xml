@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        style="@style/splash_view"
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/mar"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/imagen"/>
+
+    <View
+        style="@style/splash_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient1"/>
+
+    <ListView
+        android:id="@+id/listTareas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</android.support.constraint.ConstraintLayout>
